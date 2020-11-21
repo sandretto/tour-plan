@@ -3,7 +3,7 @@
         max-width: 960px
 @media (max-width: 992px)
     .container
-        max-width: 768px
+        max-width: 700px
     .logo
         width: 132px
     .navbar
@@ -12,16 +12,20 @@
             padding-bottom: 30px
         &__search
             margin-left: auto
-    .navbar
+            max-width: 340px
         &-menu
-            font-size: 12px
-            line-height: 15px
+            padding-top: 22px
+            padding-bottom: 22px
+            &__link
+                font-size: 12px
+                line-height: 15px
     .search
+        &__input
             width: 340px
-@media (max-width: 860px)
-    .container
-        width: 92%
 @media (max-width: 768px)
+    .container
+        max-width: 576px
+        width: 92%
     .navbar
         &__search, &-menu, &__user
             display: none
@@ -60,11 +64,5 @@
             &__offer
                 order: -1
                 margin-left: 0
-@media (max-width: 576px) 
-    .logo
-        width: 99px
-@media (max-width: 321px) 
-    .menu
-        &-button
-            margin-right: 11px
+
         
