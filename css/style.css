@@ -682,4 +682,19 @@ img {
     margin-left: 0;
   }
 }
+
+@media (max-width: 576px) {
+  .container {
+    width: 92%;
+  }
+  .logo {
+    width: 99px;
+  }
+}
+
+@media (max-width: 321px) {
+  .menu-button {
+    margin-right: 11px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
