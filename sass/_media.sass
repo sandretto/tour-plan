@@ -1,7 +1,11 @@
 @media (max-width: 1200px)
     .container
-        max-width: 960px
-@media (max-width: 992px)
+        max-width: 92%
+@media (max-width: 960px)
+    .navbar
+        &__search
+            margin-right: 100px;
+@media (max-width: 769px)
     .container
         max-width: 700px
     .logo
@@ -11,28 +15,30 @@
             padding-top: 30px
             padding-bottom: 30px
         &__search
-            margin-left: auto
-            margin-right: 75px
-            max-width: 340px
+            margin-left: 49px;
+            margin-right: auto
+            width: 340px
         &-menu
             padding-top: 22px
-            padding-bottom: 22px
+            padding-bottom: 23px
+            padding-left: 12px;
             &__link
                 font-size: 12px
                 line-height: 15px
     .search
         &__input
             width: 340px
-@media (max-width: 768px)
+@media (max-width: 320px)
     .container
-        max-width: 576px
+        max-width: 280px
         width: 92%
+    .logo
+        width: 99px
     .navbar
         &__search, &-menu, &__user
             display: none
-    .menu
-        padding: 22px 0
-        &-button
+    &-top
+        &__menu-button
             width: 16px
             height: 11px
             display: flex
@@ -42,6 +48,7 @@
             padding: 0
             border: none
             cursor: pointer
+            margin-right: 11px
             background-color: $light-theme
             &__line
                 width: 16px
@@ -65,13 +72,3 @@
             &__offer
                 order: -1
                 margin-left: 0
-@media (max-width: 576px) 
-    .container
-        width: 92%
-    .logo
-        width: 99px
-@media (max-width: 321px) 
-    .menu
-        &-button
-            margin-right: 11px
-        
