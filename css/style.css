@@ -614,6 +614,8 @@ img {
     width: 340px;
   }
   .navbar-menu {
+    max-width: 688px;
+    height: 60px;
     padding-top: 22px;
     padding-bottom: 23px;
     padding-left: 12px;
