@@ -591,13 +591,7 @@ img {
   }
 }
 
-@media (max-width: 960px) {
-  .navbar__search {
-    margin-right: 100px;
-  }
-}
-
-@media (max-width: 769px) {
+@media (max-width: 992px) {
   .container {
     max-width: 700px;
   }
@@ -629,9 +623,8 @@ img {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .container {
-    max-width: 280px;
     width: 92%;
   }
   .logo {
