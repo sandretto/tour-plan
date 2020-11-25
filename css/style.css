@@ -520,8 +520,8 @@ img {
 }
 
 .hotel-info__offer {
-  margin-left: 14px;
-  margin-top: 4px;
+  margin-left: 16px;
+  margin-top: 8px;
 }
 
 .hotel-info__name {
@@ -530,7 +530,7 @@ img {
 }
 
 .hotel-info__description {
-  margin: 5px 0;
+  margin: 2px 0;
 }
 
 .hotel-name {
