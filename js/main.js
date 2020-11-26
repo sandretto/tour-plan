@@ -4,6 +4,5 @@ var mySwiper = new Swiper('.swiper-container', {
       nextEl: '.slider-button--next',
       prevEl: '.slider-button--prev',
     },
-    speed: 900,
-    effect: 'fade'
+    speed: 900
   });
