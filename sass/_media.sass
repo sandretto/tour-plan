@@ -26,6 +26,11 @@
     .search
         &__input
             width: 340px
+    .slider
+        max-width: 700px
+        max-height: 450px
+    .swiper-container
+        height: 40%
 @media (max-width: 767px)
     .container
         max-width: 87.5%
@@ -71,7 +76,7 @@
             &__text
                 width: 100%
             &__name
-                margin-top: 10px
+                margin-top: 8px
                 margin-bottom: 0
             &__description
                 margin: 0
@@ -80,3 +85,21 @@
             &__offer
                 order: -1
                 margin-left: 0
+    .slider
+        max-width: 100%
+    .swiper-container
+        width: 100%
+        max-height: 450px
+    .swiper-image
+        max-width: 100%
+        max-height: 100%
+    .swiper-wrapper
+        display: flex
+        align-items: flex-end
+@media (max-width: 320px)
+    .swiper-container
+        width: 100%
+        max-height: 179px
+    .slider
+        max-width: 278.44px
+        max-height: 179px
