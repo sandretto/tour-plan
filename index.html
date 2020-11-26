@@ -6,8 +6,11 @@
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">  
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/swiper-bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header class="navbar">
@@ -112,6 +115,29 @@
                     <span class="rating__text">User Ratings</span>
                     <span class="rating__counter">4.5/</span><!--
                     --><span class="rating__max">5</span>
+                </div>
+            </div>
+            <div class="hotel-grid">
+                <div class="slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/slide-1.jpg" alt="Slide 1" class="swiper-image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slide-2.jpg" alt="Slide 2" class="swiper-image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slide-3.jpg" alt="Slide 3" class="swiper-image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slide-4.jpg" alt="Slide 4" class="swiper-image">
+                            </div>
+                        </div>
+
+                        <button class="slider-button slider-button--prev"></button>
+                        <button class="slider-button slider-button--next"></button>
+                    </div>
                 </div>
             </div>
         </div>
