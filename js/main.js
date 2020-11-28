@@ -4,5 +4,10 @@ var mySwiper = new Swiper('.swiper-container', {
       nextEl: '.slider-button--next',
       prevEl: '.slider-button--prev',
     },
-    speed: 900
+    speed: 900,
+    keyboard: {
+      enabled: true,
+      onlyInViewPort: true,
+      pageUpDown: true
+    }
   });
