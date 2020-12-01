@@ -517,7 +517,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 38px;
+  padding-bottom: 18px;
 }
 
 .hotel-info__offer {
@@ -696,8 +696,9 @@ img {
 .booking {
   border-radius: 8px;
   width: 350px;
-  min-height: 210px;
-  padding: 28px;
+  height: 210px;
+  padding: 26px;
+  margin-bottom: 27px;
   background-color: #0A223D;
   color: #FFFFFF;
 }
@@ -709,7 +710,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
 }
 
 .booking__price {
