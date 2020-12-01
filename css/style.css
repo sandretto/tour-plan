@@ -823,7 +823,7 @@ img {
   border: none;
 }
 
-.map {
+#map {
   width: 347px;
   height: 213px;
   border-radius: 10px;
@@ -978,7 +978,7 @@ img {
   .booking {
     width: 340px;
   }
-  .map {
+  #map {
     width: 340px;
   }
 }
@@ -1097,7 +1097,7 @@ img {
   .booking {
     width: 100%;
   }
-  .map {
+  #map {
     width: 100%;
   }
   .newsletter-wrapper {
