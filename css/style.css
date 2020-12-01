@@ -830,6 +830,90 @@ img {
   overflow: hidden;
 }
 
+.newsletter {
+  position: relative;
+  padding: 98px 0 87px 0;
+  background-image: url(../img/newsletter.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.newsletter:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 34, 61, 0.8);
+}
+
+.newsletter-wrapper {
+  position: relative;
+  max-width: 731px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+}
+
+.newsletter-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.newsletter-title__strong {
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.subscribe {
+  position: relative;
+  width: 355px;
+  height: 55px;
+  overflow: hidden;
+}
+
+.subscribe__input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 33px;
+  padding-right: 75px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #BDBDBD;
+  border-radius: 4px;
+}
+
+.subscribe__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 65px;
+  height: 100%;
+  border: none;
+  background-color: #EC1F46;
+  color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 0px 4px 4px 0px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 92%;
@@ -846,7 +930,7 @@ img {
 }
 
 @media (max-width: 992px) {
-  .container {
+  .container, .newsletter-wrapper {
     max-width: 700px;
   }
   .logo {
@@ -1016,6 +1100,16 @@ img {
   .map {
     width: 100%;
   }
+  .newsletter-wrapper {
+    max-width: 87.5%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1030,6 +1124,15 @@ img {
   }
   .hotel-grid {
     margin-top: 18px;
+  }
+  .newsletter {
+    padding: 76px 0 83px 0;
+  }
+  .newsletter__title {
+    padding-bottom: 37px;
+  }
+  .subscribe {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
