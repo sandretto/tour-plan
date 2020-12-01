@@ -2,7 +2,7 @@
     .container
         max-width: 92%
 @media (max-width: 992px)
-    .container
+    .container, .newsletter-wrapper
         max-width: 700px
     .logo
         width: 132px
@@ -96,6 +96,11 @@
     .swiper-wrapper
         display: flex
         align-items: flex-end
+    .newsletter
+        &-wrapper
+            max-width: 87.5%
+            flex-direction: column
+            align-items: flex-start
 @media (max-width: 320px)
     .swiper-container
         width: 100%
@@ -103,3 +108,9 @@
     .slider
         max-width: 278.44px
         max-height: 179px
+    .newsletter
+        padding: 76px 0 83px 0
+        &__title
+            padding-bottom: 37px
+    .subscribe
+        width: 100%
