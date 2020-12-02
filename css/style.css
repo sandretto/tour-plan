@@ -1287,17 +1287,17 @@ img {
     display: none;
   }
   .reviews-slider__button {
-    top: 45px;
+    top: 70px;
   }
   .reviews-slider__button--prev {
     left: 50%;
-    margin-left: -65px;
+    margin-left: -92px;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
   }
   .reviews-slider__button--next {
     right: 50%;
-    margin-right: -65px;
+    margin-right: -87px;
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
   }
@@ -1327,6 +1327,20 @@ img {
   }
   .subscribe {
     width: 100%;
+  }
+  .reviews {
+    padding: 18px 0 70px 0;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
+  }
+  .reviews-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    width: 245px;
+    margin: 21px 0px 3px 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
