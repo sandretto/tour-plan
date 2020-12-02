@@ -1,4 +1,4 @@
-var mySwiper = new Swiper('.hotel-slider', {
+var hotelSlider = new Swiper('.hotel-slider', {
     loop: true,
     navigation: {
       nextEl: '.hotel-slider__button--next',
@@ -31,3 +31,17 @@ function init () {
             preset: 'islands#greenDotIconWithCaption'
         }));
 }
+
+var reviewsSlider = new Swiper('.reviews-slider', {
+  loop: true,
+  navigation: {
+    nextEl: '.reviews-slider__button--next',
+    prevEl: '.reviews-slider__button--prev',
+  },
+  speed: 900,
+  keyboard: {
+    enabled: true,
+    onlyInViewPort: true,
+    pageUpDown: true
+  }
+});
