@@ -1,8 +1,8 @@
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.hotel-slider', {
     loop: true,
     navigation: {
-      nextEl: '.slider-button--next',
-      prevEl: '.slider-button--prev',
+      nextEl: '.hotel-slider__button--next',
+      prevEl: '.hotel-slider__button--prev',
     },
     speed: 900,
     keyboard: {
