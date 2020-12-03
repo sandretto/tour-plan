@@ -1417,6 +1417,7 @@ img {
   .card {
     width: 48%;
     height: 255px;
+    margin-bottom: 20px;
   }
 }
 
