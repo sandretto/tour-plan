@@ -1314,6 +1314,9 @@ img {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 22px;
   background-color: #EC1F46;
   color: #FFFFFF;
 }
@@ -1324,6 +1327,28 @@ img {
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
+}
+
+.footer-bottom {
+  margin-top: 102px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__conditions {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.footer__payment {
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 @media (max-width: 1200px) {
