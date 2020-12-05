@@ -11,9 +11,19 @@
     &__logo
         grid-row: 1 / 3
         width: 166px
+        height: 177px
         align-self: stretch
+        margin-top: 36px
     &__categories
         grid-row: 1 / 4
+        margin-top: 5px
+        margin-left: 9px
+    &__additional
+        margin-top: 4px
+        margin-left: 10px
+    &__legal
+        margin-top: 4px
+        margin-left: 73px
     &__social
         &-links
             display: flex
@@ -25,20 +35,26 @@
             align-content: center
             grid-row: 2 / 4
             grid-column: 3 / 5
+            margin: 3px 0 0 12px
     &__contact
         &-details
             grid-column: span 2
+            margin: 72px 0 0 0
         &-form
             grid-column: span 2
+            padding: 61px 0 0 11px
     &__form
         display: flex
         justify-content: space-between
         align-items: center
         flex-wrap: wrap
     &__ul
-        padding: 0
+        padding: 2px 0 0 0
         margin: 0
         list-style: none
+        &--details
+            margin-left: 10px
+            padding-top: 7px
     &__title
         font-style: normal
         font-weight: bold
@@ -49,7 +65,9 @@
         &--inline
             margin: 0 43px 0 0 
         &--mb-3
-            margin-bottom: 30px
+            margin-bottom: 26px
+        &--form
+            margin-bottom: 33px
     &__item
         display: flex
         align-items: flex-start
@@ -62,10 +80,14 @@
             margin-bottom: 20px
     &__icon
         &-wrapper
-            min-width: 40px
+            min-width: 37px
+    &__phones
+        display: block
+    &__phone
+        margin: 0
     &__text
         color: $footer-text-color
-        margin-bottom: 22px
+        margin: 10px 0 21px 0
     &__link
         text-decoration: none
         color: inherit
@@ -78,11 +100,12 @@
         margin-bottom: 15px
         flex-basis: 48%
     &__message
-        background-color: $light-theme
+        max-height: 123px
         border-radius: 4px
         padding: 18px 23px
         border: none
         flex-basis: 100%
+        background-color: $light-theme
     &__button
         min-width: 160px
         min-height: 50px
@@ -101,6 +124,7 @@
         font-weight: bold
         font-size: 12px
         line-height: 15px
+        margin-top: 20px
         color: $footer-text-color
     &-bottom
         margin-top: 102px
