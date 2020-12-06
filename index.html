@@ -15,7 +15,7 @@
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    <header class="navbar">
+    <header class="navbar navbar__mobile--fixed">
         <div class="container">
             <div class="navbar-top">
                 <a href="#" class="logo">
@@ -25,7 +25,7 @@
                         class="logo__image">
                 </a>
 
-                <form action="#" class="search navbar__search">
+                <form action="#" class="search navbar__search navbar__search--mobile--hidden">
                     <input 
                         type="text" 
                         class="search__input"
@@ -37,7 +37,7 @@
                     </button>
                 </form>
 
-                <a href="#" class="user navbar__user">
+                <a href="#" class="user navbar__user navbar__user--mobile--hidden">
                     <img 
                         src="img/user-avatar.jfif" 
                         alt="Avatar: Nathan" 
@@ -54,25 +54,47 @@
         <nav class="navbar-bottom">
             <div class="container">
                 <ul class="navbar-menu">
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item--mobile--visible">
+                        <a href="#" class="user navbar__user navbar__user--mobile--visible">
+                            <img 
+                                src="img/user-avatar.jfif" 
+                                alt="Avatar: Nathan" 
+                                class="user__avatar">
+                            <span class="user__name user__name--light">Nathan</span>
+                        </a>
+                    </li>
+                    <li class="navbar-menu__item--mobile--visible">
+                        <form action="#" class="search navbar__search navbar__search--mobile--visible">
+                            <input 
+                                type="text" 
+                                class="search__input search__input--mobile--visible"
+                                placeholder="Search Location"/>
+                            <button class="search__button search__button--mobile--visible">
+                                <img 
+                                src="img/search.svg"
+                                alt="Button: Search">
+                            </button>
+                        </form>
+                    </li>
+                    <li class="navbar-menu__item--mobile--visible">
                         <a href="#" class="navbar-menu__link">All Deals</a>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item--mobile--visible">
                         <a href="#" class="navbar-menu__link">Hotels</a>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item--mobile--visible">
                         <a href="#" class="navbar-menu__link">Activities</a>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item--mobile--visible">
                         <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item--mobile--visible">
                         <a href="#" class="navbar-menu__link">Restaurants</a>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item--mobile--visible">
                         <a href="#" class="navbar-menu__link">Events</a>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item--mobile--visible">
                         <a href="#" class="navbar-menu__link">Rodrigues</a>
                     </li>
                 </ul>
