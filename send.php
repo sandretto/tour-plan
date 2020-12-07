@@ -27,14 +27,7 @@ try {
     $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
-    // Настройки вашей почты
-    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'alexandrosherry@gmail.com'; // Логин на почте
-    $mail->Password   = 'Sherry2020'; // Пароль на почте
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 465;
-    $mail->setFrom('alexandrosherry@gmail.com', 'Alexander'); // Адрес самой почты и имя отправителя
-
+    
     // Получатель письма
     $mail->addAddress('alepet.petr1638@yandex.ru');
 
