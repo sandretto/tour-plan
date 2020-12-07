@@ -464,14 +464,24 @@
                 </div>
                 <div class="footer__contact-form">
                     <h3 class="footer__title footer__title--form">Send us a message</h3>
-                    <form action="#" class="footer__form">
-                        <input type="text" class="input footer__input" placeholder="Your Full Name">
-                        <input type="text" class="input footer__input" placeholder="Phone Number">
+                    <form 
+                        action="send.php" 
+                        class="footer__form"
+                        method="POST">
+                        <input 
+                            type="text" 
+                            class="input footer__input" 
+                            placeholder="Your Full Name"
+                            name="name">
+                        <input 
+                            type="text" 
+                            class="input footer__input" 
+                            placeholder="Phone Number"
+                            name="phone">
                         <textarea 
-                        cols="30" 
-                        rows="10" 
-                        class="footer__message"
-                        placeholder="Message"></textarea>
+                            class="footer__message"
+                            placeholder="Message"
+                            name="message"></textarea>
                         <span class="footer__info--top">* Required fields</span>
                         <button type="submit" class="button footer__button">Send</button>
                         <span class="footer__info--span">* Required fields</span>
