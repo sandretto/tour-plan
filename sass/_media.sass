@@ -122,7 +122,7 @@
             max-width: 255px
         &-bottom
             margin: 63px 0 0 15px
-            min-width: 700px
+            max-width: 700px
         &__conditions
             grid-column: span 2
             justify-self: start
@@ -134,6 +134,7 @@
     .logo
         width: 99px
     .navbar
+        max-width: 100%
         &__search, &__user
             &--mobile
                 &--hidden
@@ -303,6 +304,14 @@
         &__input
             flex-basis: 100%
 @media (max-width: 320px)
+    .navbar
+        &__mobile
+            &--fixed
+                position: fixed
+                top: 0
+                right: 0
+                left: 0
+                z-index: 99
     .swiper-container
         width: 100%
     .hotel

@@ -1582,7 +1582,7 @@ img {
   }
   .footer-bottom {
     margin: 63px 0 0 15px;
-    min-width: 700px;
+    max-width: 700px;
   }
   .footer__conditions {
     grid-column: span 2;
@@ -1600,6 +1600,9 @@ img {
   }
   .logo {
     width: 99px;
+  }
+  .navbar {
+    max-width: 100%;
   }
   .navbar__search--mobile--hidden, .navbar__user--mobile--hidden {
     display: none;
@@ -1839,6 +1842,13 @@ img {
 }
 
 @media (max-width: 320px) {
+  .navbar__mobile--fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+  }
   .swiper-container {
     width: 100%;
   }
