@@ -1,24 +1,31 @@
 <?php
-// Файлы phpmailer
+
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
-// Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$email = $_POST['email'];
 
-// Формирование самого письма
 $title = "New message from Best Tour Plan";
-$body = "
-<h2>New message</h2>
-<b>Name:</b> $name<br>
-<b>Phone:</b> $phone<br><br>
-<b>Message:</b><br>$message
-";
+if($name != null || $phone != null || $message != null)
+{
+    $body = "
+    <h2>New message from</h2>
+    <b>Name:</b> $name<br>
+    <b>Phone:</b> $phone<br><br>
+    <b>Message:</b><br>$message
+    ";
+} 
+else 
+{
+    $body = "
+    <h2>New subscription from</h2>
+    <b>Email:</b> $email<br>";
+}
 
-// Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
     $mail->isSMTP();   
@@ -27,30 +34,25 @@ try {
     //$mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
-    // Настройки вашей почты
-    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'alexandrosherry@gmail.com'; // Логин на почте
-    $mail->Password   = 'Sherry1992'; // Пароль на почте
+    $mail->Host       = 'smtp.gmail.com'; 
+    $mail->Username   = 'alexandrosherry@gmail.com'; 
+    $mail->Password   = 'Sherry1992'; 
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('alexandrosherry@gmail.com', 'Alexander'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('alexandrosherry@gmail.com', 'Alexander'); 
 
-    // Получатель письма
     $mail->addAddress('alepet.petr1638@yandex.ru');
 
-    // Отправка сообщения
     $mail->isHTML(true);
     $mail->Subject = $title;
     $mail->Body = $body;    
 
-    // Проверяем отравленность сообщения
     if ($mail->send()) {$result = "success";} 
     else {$result = "error";}
 
 } catch (Exception $e) {
     $result = "error";
-    $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
+    $status = "Message is not sent. Error: {$mail->ErrorInfo}";
 }
 
-// Отображение результата
 header('Location: thanks.html');
