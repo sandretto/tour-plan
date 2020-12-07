@@ -411,7 +411,7 @@ img {
   line-height: 18px;
 }
 
-.navbar-menu__item--mobile--visible {
+.navbar-menu__user--mobile--visible, .navbar-menu__search--mobile--visible {
   display: none;
 }
 
