@@ -388,10 +388,15 @@ img {
   border-radius: 4px;
   background-color: #EC1F46;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .button__home {
   margin-top: 10px;
+}
+
+.invalid {
+  color: #EC1F46;
 }
 
 .navbar {
@@ -1364,6 +1369,10 @@ img {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1479,12 +1488,13 @@ img {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-width: 123px;
+  margin-top: 15px;
 }
 
 .modal__button {
@@ -1525,7 +1535,7 @@ img {
     width: 230px;
     height: 230px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1643,9 +1653,9 @@ img {
     -ms-grid-columns: (1fr)[7];
         grid-template-columns: repeat(7, 1fr);
   }
-  .footer__input {
-    -ms-flex-preferred-size: 49%;
-        flex-basis: 49%;
+  .footer__input-group {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
   .footer__logo {
     width: 120px;
@@ -1959,7 +1969,7 @@ img {
     width: 48%;
     height: 255px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2062,7 +2072,7 @@ img {
   .footer__text {
     margin: 10px 0 20px 0;
   }
-  .footer__input {
+  .footer__input-group {
     max-width: 278px;
   }
   .footer__button {
