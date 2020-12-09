@@ -94,6 +94,7 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
     $('.modal__form').validate().resetForm();
+    $('.modal__form').trigger('reset');
   }
 
   function closeModal(event) {
@@ -117,6 +118,7 @@ $(document).ready(function () {
   $(".form").each(function() {
     $(this).validate({
       errorClass: "invalid",
+      errorPosition: 't',
       rules: {
         name: {
           required: true,

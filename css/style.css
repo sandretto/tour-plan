@@ -396,7 +396,20 @@ img {
 }
 
 .invalid {
+  display: inline-block;
+  background: #FFFFFF;
   color: #EC1F46;
+}
+
+label {
+  position: absolute;
+  border-radius: 4px;
+  border: 1px solid;
+  z-index: 102;
+  width: 200px;
+  height: 50px;
+  opacity: 0.9;
+  padding: 5px 0 0 10px;
 }
 
 .navbar {
@@ -925,7 +938,6 @@ img {
   position: relative;
   width: 355px;
   height: 55px;
-  overflow: hidden;
 }
 
 .subscribe__input {
