@@ -537,26 +537,32 @@
                 action="send.php" 
                 class="modal__form form"
                 method="POST">
-                <input 
-                        type="text" 
+                <div class="modal__input-group">
+                    <input 
+                            type="text" 
+                            class="input modal__input" 
+                            placeholder="Your Full Name*" 
+                            name="name"
+                            required
+                            minlength="2">
+                </div>
+                <div class="modal__input-group">
+                    <input 
+                        type="tel" 
                         class="input modal__input" 
-                        placeholder="Your Full Name*" 
-                        name="name"
+                        placeholder="Phone Number*" 
+                        name="phone"
                         required
-                        minlength="2">
-                <input 
-                    type="tel" 
-                    class="input modal__input" 
-                    placeholder="Phone Number*" 
-                    name="phone"
-                    required
-                    data-mask="+7(000)-000-00-00">
-                <input 
+                        data-mask="+7(000)-000-00-00">
+                </div>
+                <div class="modal__input-group">
+                    <input 
                     type="email" 
                     class="input modal__input" 
                     placeholder="Email*" 
                     name="email"
                     required>
+                </div>
                 <textarea 
                     class="message modal__message" 
                     placeholder="Message" 

@@ -1510,6 +1510,10 @@ label.invalid {
   margin-top: 15px;
 }
 
+.modal__input-group {
+  position: relative;
+}
+
 .modal__message {
   width: 100%;
   min-width: 123px;
