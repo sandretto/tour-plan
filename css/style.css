@@ -1793,6 +1793,7 @@ label.invalid {
     right: 0;
     left: 0;
     z-index: 99;
+    opacity: 0.8;
   }
   .navbar-bottom {
     display: none;
@@ -2140,6 +2141,7 @@ label.invalid {
     right: 0;
     left: 0;
     z-index: 99;
+    opacity: 0.8;
   }
   .swiper-container {
     width: 100%;

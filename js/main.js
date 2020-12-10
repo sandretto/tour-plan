@@ -148,5 +148,8 @@ $(document).ready(function () {
       }
     });
   });
+
+  //animation with AOS
+  AOS.init();
 });
 
