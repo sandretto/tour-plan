@@ -388,10 +388,34 @@ img {
   border-radius: 4px;
   background-color: #EC1F46;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .button__home {
   margin-top: 10px;
+}
+
+.invalid {
+  display: inline-block;
+  background: #FFFFFF;
+  color: #EC1F46;
+}
+
+label {
+  border-radius: 4px;
+  border: 1px solid;
+  z-index: 102;
+  min-height: 55px;
+  width: 200px;
+  opacity: 0.9;
+  padding: 5px 0 0 10px;
+}
+
+label.invalid {
+  position: absolute;
+  top: -70px;
+  right: 0;
+  visibility: visible;
 }
 
 .navbar {
@@ -920,7 +944,6 @@ img {
   position: relative;
   width: 355px;
   height: 55px;
-  overflow: hidden;
 }
 
 .subscribe__input {
@@ -1364,9 +1387,14 @@ img {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
+  position: relative;
 }
 
 .footer__message {
@@ -1479,12 +1507,17 @@ img {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.modal__input-group {
+  position: relative;
 }
 
 .modal__message {
   width: 100%;
   min-width: 123px;
+  margin-top: 15px;
 }
 
 .modal__button {
@@ -1521,11 +1554,14 @@ img {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .hotel-right {
+    margin-left: 30px;
+  }
   .card {
     width: 230px;
     height: 230px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1594,6 +1630,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-left: 0;
   }
   .hotel-slider {
     width: 100%;
@@ -1643,9 +1680,9 @@ img {
     -ms-grid-columns: (1fr)[7];
         grid-template-columns: repeat(7, 1fr);
   }
-  .footer__input {
-    -ms-flex-preferred-size: 49%;
-        flex-basis: 49%;
+  .footer__input-group {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
   .footer__logo {
     width: 120px;
@@ -1959,7 +1996,7 @@ img {
     width: 48%;
     height: 255px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2062,7 +2099,7 @@ img {
   .footer__text {
     margin: 10px 0 20px 0;
   }
-  .footer__input {
+  .footer__input-group {
     max-width: 278px;
   }
   .footer__button {
