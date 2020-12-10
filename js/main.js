@@ -118,7 +118,6 @@ $(document).ready(function () {
   $(".form").each(function() {
     $(this).validate({
       errorClass: "invalid",
-      errorPosition: 't',
       rules: {
         name: {
           required: true,
