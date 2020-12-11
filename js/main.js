@@ -16,34 +16,19 @@ $(document).ready(function () {
   });
 
   //yandex map
-  var myMap;
+  setTimeout(function() {
+    var script = document.createElement('script');
+    script.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=c8a6a4d5-ad47-4976-853a-fa3244265136&onload=init';
+    script.type = 'text/javascript';
+    document.body.appendChild(script);
+  }, 900);
 
-  ymaps.ready(init);
-
-  function init() {
-    myMap = new ymaps.Map(
-      "map",
-      {
-        center: [59.763561, 30.35599],
-        zoom: 10,
-      },
-      {
-        searchControlProvider: "yandex#search",
-      }
-    );
-
-    myMap.geoObjects.add(
-      new ymaps.Placemark(
-        [59.763561, 30.35599],
-        {
-          iconCaption: "Хилтон Санкт-Петербург Экспофорум",
-        },
-        {
-          preset: "islands#greenDotIconWithCaption",
-        }
-      )
-    );
-  }
+  setTimeout(function() {
+    var script = document.createElement('script');
+    script.src = 'js/map.js';
+    script.type = 'text/javascript';
+    document.body.appendChild(script);
+  }, 3000);
 
   //reviews slider
   var reviewsSlider = new Swiper(".reviews-slider", {
