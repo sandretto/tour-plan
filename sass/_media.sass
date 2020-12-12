@@ -129,7 +129,7 @@
             margin: 31px 0 0 6px
         &__legal
             grid-column: span 2
-            margin: 31px 0 0 -5px
+            margin: 31px 0 0 -7px
         &__contact
             &-details
                 grid-row: 3
@@ -153,6 +153,7 @@
     body
         padding-top: 78px
     .container
+        max-width: 540px
         width: 87.5%
     .logo
         width: 99px
@@ -388,8 +389,9 @@
                 padding-top: 7px
         &__icon
             &-wrapper
-                min-width: 20px
-                padding-top: 6px
+                min-width: 28px
+                padding-top: 3px
+                padding-right: 10px
         &__item
             &--mb-2
                 margin: 0 0 20px 0
@@ -419,6 +421,9 @@
     .subscribe
         width: 300px
 @media (max-width: 320px)
+    .container
+        width: 280px
+        max-width: 281px
     .navbar
         &__mobile
             &--fixed
@@ -454,7 +459,7 @@
             &__text
                 max-width: 280px
                 width: 78%
-                text-align: left
+                text-align: justify
         &-title
             font-weight: bold
             font-size: 18px
