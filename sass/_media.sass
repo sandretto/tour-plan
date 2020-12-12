@@ -493,3 +493,13 @@
                 font-size: 16px
                 transition: 300ms ease
                 font-weight: bold
+@media only screen and (min-device-width: 320px) and (max-device-width: 780px) and (orientation: landscape)
+    .navbar
+        &-bottom
+        &--visible
+            overflow: scroll
+    .modal
+        overflow-y: initial !important
+        &__dialog
+            height: 95vh
+            overflow-y: auto
