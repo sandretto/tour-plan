@@ -1,1 +1,140 @@
-$(document).ready(function(){new Swiper(".hotel-slider",{loop:!0,navigation:{nextEl:".hotel-slider__button--next",prevEl:".hotel-slider__button--prev"},speed:900,keyboard:{enabled:!0,onlyInViewPort:!0,pageUpDown:!0}});setTimeout(function(){var e=document.createElement("script");e.src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=c8a6a4d5-ad47-4976-853a-fa3244265136&onload=init",e.type="text/javascript",document.body.appendChild(e)},900),setTimeout(function(){var e=document.createElement("script");e.src="js/map.js",e.type="text/javascript",document.body.appendChild(e)},3e3);new Swiper(".reviews-slider",{loop:!0,navigation:{nextEl:".reviews-slider__button--next",prevEl:".reviews-slider__button--prev"},speed:900,keyboard:{enabled:!0,onlyInViewPort:!0,pageUpDown:!0}});$(".menu-button").on("click",function(){$(".navbar-bottom").toggleClass("navbar-bottom--visible")});var e=$("[data-toggle=modal]"),o=$(".modal__overlay"),a=$(".modal__dialog");$(".input"),$("label");function t(e,o){e.removeClass("modal__overlay--visible"),o.removeClass("modal__dialog--visible"),$(".modal__form").validate().resetForm(),$(".modal__form").trigger("reset")}e.on("click",function(){var e=$(this).attr("data-href");$(e).find(".modal__overlay").addClass("modal__overlay--visible"),$(e).find(".modal__dialog").addClass("modal__dialog--visible")}),$(".modal__close").on("click",function(e){e.preventDefault(),t(o,a)}),$(document).keydown(function(e){27==(e.keyCode||e.which)&&t(o,a)}),$.validator.addMethod("mobileRU",function(e,o){var a=e.replace(/\(|\)|\s+|-/g,"");return this.optional(o)||a.length>9&&/^((\+7|7|8)+([0-9]){10})$/.test(a)},"Your mobile number must be in the format of +79999999999"),$(".form").each(function(){$(this).validate({errorClass:"invalid",rules:{name:{required:!0,minlength:2},phone:{required:!0,mobileRU:!0},email:{required:!0,email:!0}},messages:{name:{required:"Please specify your name",minlength:"Name should not be shorter than 2 symbols"},phone:{required:"We need your mobile phone to contact you",phone:"Your mobile number must be in the format of +79999999999"},email:{required:"We need your email address to contact you",email:"Your email address must be in the format of name@domain.com"}}})}),AOS.init()});
+$(document).ready(function () {
+  
+  //hotel slider
+  var hotelSlider = new Swiper(".hotel-slider", {
+    loop: true,
+    navigation: {
+      nextEl: ".hotel-slider__button--next",
+      prevEl: ".hotel-slider__button--prev",
+    },
+    speed: 900,
+    keyboard: {
+      enabled: true,
+      onlyInViewPort: true,
+      pageUpDown: true,
+    },
+  });
+
+  //yandex map
+  setTimeout(function() {
+    var script = document.createElement('script');
+    script.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=c8a6a4d5-ad47-4976-853a-fa3244265136&onload=init';
+    script.type = 'text/javascript';
+    document.body.appendChild(script);
+  }, 900);
+
+  setTimeout(function() {
+    var script = document.createElement('script');
+    script.src = 'js/map.js';
+    script.type = 'text/javascript';
+    document.body.appendChild(script);
+  }, 3000);
+
+  //reviews slider
+  var reviewsSlider = new Swiper(".reviews-slider", {
+    loop: true,
+    navigation: {
+      nextEl: ".reviews-slider__button--next",
+      prevEl: ".reviews-slider__button--prev",
+    },
+    speed: 900,
+    keyboard: {
+      enabled: true,
+      onlyInViewPort: true,
+      pageUpDown: true,
+    },
+  });
+
+  //mobile menu
+  var menuButton = $(".menu-button");
+  menuButton.on("click", function () {
+    $(".navbar-bottom").toggleClass("navbar-bottom--visible");
+  });
+
+  //modal dialog
+
+  var modalButton = $('[data-toggle=modal]');
+  var modalOverlay = $('.modal__overlay');
+  var modalDialog = $('.modal__dialog');
+  var modalInput = $('.input');
+  var label = $('label');
+
+  modalButton.on('click', openModal);
+
+  function openModal() {
+    var targetModal = $(this).attr('data-href');
+    $(targetModal)
+      .find('.modal__overlay')
+      .addClass('modal__overlay--visible');
+    $(targetModal)
+      .find('.modal__dialog')
+      .addClass('modal__dialog--visible');
+  }
+
+  var closeButton = $('.modal__close');
+
+  closeButton.on('click', closeModal);
+
+  function hideModal(modalOverlay, modalDialog) {
+    modalOverlay.removeClass('modal__overlay--visible');
+    modalDialog.removeClass('modal__dialog--visible');
+    $('.modal__form').validate().resetForm();
+    $('.modal__form').trigger('reset');
+  }
+
+  function closeModal(event) {
+    event.preventDefault();
+    hideModal(modalOverlay, modalDialog);
+  }
+
+  $(document).keydown(function(event) {
+    var code = event.keyCode || event.which;
+    if (code == 27) {
+      hideModal(modalOverlay, modalDialog);
+    }
+  });
+
+  //form validation
+  $.validator.addMethod( 'mobileRU', function( phone_number, element ) {
+    var ruPhone_number = phone_number.replace( /\(|\)|\s+|-/g, "" );
+    return this.optional( element ) || ruPhone_number.length > 9 && /^((\+7|7|8)+([0-9]){10})$/.test( ruPhone_number );
+  }, "Your mobile number must be in the format of +79999999999" );
+
+  $(".form").each(function() {
+    $(this).validate({
+      errorClass: "invalid",
+      rules: {
+        name: {
+          required: true,
+          minlength: 2
+        },
+        phone: {
+          required: true,
+          mobileRU: true
+        },
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Name should not be shorter than 2 symbols"
+        },
+        phone: {
+          required: "We need your mobile phone to contact you",
+          phone: "Your mobile number must be in the format of +79999999999"
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        }
+      }
+    });
+  });
+
+  //animation with AOS
+  AOS.init();
+});
+

@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Best Tour Plan - Hotel Booking</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="css/swiper-bundle.min.css">  
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/jquery-3.5.1.min.js" type="text/javascript" defer></script>
-        <script src="js/jquery.validate.min.js" type="text/javascript" defer></script>
-        <script src="js/jquery.mask.min.js" type="text/javascript" defer></script>
-        <script src="js/main.js" type="text/javascript" defer></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito+Sans:wght@400;700;800&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
 <body>
     <header class="navbar navbar__mobile--fixed">
         <div class="container">
@@ -245,9 +239,20 @@
                                     class="footer__icon">
                             </div>
                             <div class="footer__phones">
-                                <p class="footer__phone">Tel (business hours) : 269-15-00</p>
-                                <p class="footer__phone">Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)</p>
-                                <p class="footer__phone">Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</p>
+                                <div class="footer__phone">
+                                    <span>Tel (business hours) : 
+                                    </span><a href="tel:269-15-00" class="footer__link">269-15-00</a>
+                                </div>
+                                <div class="footer__phone">
+                                    <span>Tel (hotline) Monday - Saturday: 
+                                    </span><a href="tel:52-56-61-38" class="footer__link">52-56-61-38</a><span>
+                                    (08:00 am – 20:00 pm) </span>
+                                </div>
+                                <div class="footer__phone">
+                                    <span>Tel (hotline) Sunday: 
+                                    </span><a href="tel:52-56-61-38" class="footer__link"> 52-56-61-38</a><span>
+                                     (08:00 am – 14:00 pm)</span>
+                                </div>
                             </div>
                         </li>
                         <li class="footer__item footer__item--mb-2">
@@ -290,17 +295,17 @@
                             class="message footer__message"
                             placeholder="Message"
                             name="message"></textarea>
-                        <span class="footer__info--top">* Required fields</span>
+                        <span class="footer__info--top">*&nbsp;Required fields</span>
                         <button type="submit" class="button footer__button">Send</button>
-                        <span class="footer__info--span">* Required fields</span>
+                        <span class="footer__info--span">*&nbsp;Required fields</span>
                     </form>
                 </div>
             </div>
             <div class="footer-bottom">
                 <div class="footer__conditions">
-                    <span>Disclaimer</span> 
-                    <span>Conditions of use</span> 
-                    <span>Cancellation policy</span>
+                    <span>Disclaimer&nbsp;&nbsp;</span> 
+                    <span>Conditions of use&nbsp;</span> 
+                    <span>Cancellation&nbsp;policy</span>
                 </div>
                 <div class="footer__payment">
                     <img    

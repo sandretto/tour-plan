@@ -78,6 +78,12 @@
             margin: 10px 0
             &__item
                 max-width: 580px
+            &__button
+                top: 49%
+                &--next
+                    right: 0
+                &--prev
+                    left: 0
         &-title
             font-weight: bold
             font-size: 30px
@@ -85,7 +91,7 @@
             text-align: center
             margin-bottom: 50px
     .activities
-        padding: 35px 6px 51px 0
+        padding: 50px 6px 51px 0
         &-wrapper
             flex-wrap: wrap
     .card
@@ -124,9 +130,6 @@
         &__legal
             grid-column: span 2
             margin: 31px 0 0 -5px
-        &__item
-            &--mb-2
-                margin: 0
         &__contact
             &-details
                 grid-row: 3
@@ -136,16 +139,18 @@
                 grid-row: 4
                 grid-column: span 6
                 max-width: 550px
-                padding: 35px 0 0 11px
+                padding: 18px 0 0 9px
                 justify-content: space-between
         &__input
             max-width: 255px
         &-bottom
-            margin: 63px 0 0 15px
+            margin: 55px 0 0 15px
             max-width: 700px
+            width: 100%
         &__conditions
             grid-column: span 2
             justify-self: start
+            margin-top: 8px
 @media (max-width: 767px)
     body
         padding-top: 78px
@@ -177,7 +182,6 @@
                 right: 0
                 left: 0
                 z-index: 99
-                opacity: 0.8
         &-bottom
             display: none
             position: fixed
@@ -306,14 +310,14 @@
                 &:after, &:before
                     display: none
             &__button
-                top: 70px
+                top: 61px
                 &--prev
                     left: 50%
                     margin-left: -92px
                     transform: translate(-50%, 0)
                 &--next
                     right: 50%
-                    margin-right: -87px
+                    margin-right: -88px
                     transform: translate(50%, 0)
     .activities
         padding-top: 40px
@@ -407,8 +411,8 @@
         &-bottom
             grid-column: 1
             margin: 28px 0 0 0
-            min-width: 87%
             display: block
+            width: 277px
         &__conditions
             grid-column: 1
             max-width: 280px
@@ -428,6 +432,7 @@
                 opacity: 0.8
     .swiper-container
         width: 100%
+        max-height: 179px
     .hotel
         padding-bottom: 40px
         &-slider
@@ -468,3 +473,23 @@
             margin-bottom: 36px
     .card
         width: 100%
+@media (min-width: 992px)
+    button
+        &:hover
+            background-color: #92505d
+    .input, .message
+        &:hover
+            background-color: #BBBBBB
+            border: none
+    .navbar
+        &-menu
+            &__link    
+                &:hover
+                    font-size: 16px
+                    transition: 300ms ease
+    .footer
+        &__link
+            &:hover
+                font-size: 16px
+                transition: 300ms ease
+                font-weight: bold

@@ -39,7 +39,7 @@
                 background-repeat: no-repeat
         &__button
             position: absolute
-            top: 50%
+            top: 45%
             transform: translateY(-50%)
             width: 30px
             height: 30px
@@ -50,13 +50,15 @@
             background-position: center
             background-color: transparent
             z-index: 99
+            &:hover
+                background-color: transparent
             &--next
-                right: 0
+                right: 18px
                 background-image: url(../img/next-secondary.svg)
                 &:focus
                     outline: 0
             &--prev
-                left: 0
+                left: 18px
                 background-image: url(../img/prev-secondary.svg)
                 &:focus
                     outline: 0
