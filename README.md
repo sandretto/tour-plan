@@ -1,10 +1,10 @@
 # tour-plan
 Hotel booking site (frontend practice)
 
-Учебный проект для практики в верстке на курсе Веб Старт от Glo Academy (https://glo.academy). 
-Автор курса — Артем Исламов.
+Educational project on the course Web Start from Glo Academy (https://glo.academy). 
 
-Проект выполняет Петров Александр. 
-Одиннадцатый поток курса Веб Старт. Тариф "Полный фарш" с куратором.
+Author of the course: Artem Islamov.
 
-Куратор Козлов Алексей
+The project was implemented by student Alexander Petrov (me). 
+
+Tutor: Alexey Kozlov
